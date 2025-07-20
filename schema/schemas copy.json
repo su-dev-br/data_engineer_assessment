@@ -1,0 +1,80 @@
+{
+  "HOA": {
+    "HOA": "string",
+    "HOA_Flag": "string"
+  },
+  "Leads": {
+    "Reviewed_Status": "string",
+    "Most_Recent_Status": "string",
+    "Source": "string",
+    "Occupancy": "string",
+    "Net_Yield": "number",
+    "IRR": "number",
+    "Selling_Reason": "string",
+    "Seller_Retained_Broker": "string",
+    "Final_Reviewer": "string"
+  },
+  "property": {
+    "Property_Title": "string",
+    "Address": "string",
+    "Market": "string",
+    "Flood": "string",
+    "Street_Address": "string",
+    "City": "string",
+    "State": "string",
+    "Zip": "string",
+    "Property_Type": "string",
+    "Highway": "string",
+    "Train": "string",
+    "Tax_Rate": "number",
+    "SQFT_Basement": "number",
+    "HTW": "string",
+    "Pool": "string",
+    "Commercial": "string",
+    "Water": "string",
+    "Sewage": "string",
+    "Year_Built": "number",
+    "SQFT_MU": "number",
+    "SQFT_Total": "number",
+    "Parking": "string",
+    "Bed": "number",
+    "Bath": "number",
+    "BasementYesNo": "string",
+    "Layout": "string",
+    "Rent_Restricted": "string",
+    "Neighborhood_Rating": "string",
+    "Latitude": "number",
+    "Longitude": "number",
+    "Subdivision": "string",
+    "School_Average": "number"
+  },
+  "Rehab": {
+    "Underwriting_Rehab": "string",
+    "Rehab_Calculation": "string",
+    "Paint": "string",
+    "Flooring_Flag": "string",
+    "Foundation_Flag": "string",
+    "Roof_Flag": "string",
+    "HVAC_Flag": "string",
+    "Kitchen_Flag": "string",
+    "Bathroom_Flag": "string",
+    "Appliances_Flag": "string",
+    "Windows_Flag": "string",
+    "Landscaping_Flag": "string",
+    "Trashout_Flag": "string"
+  },
+  "Taxes": {
+    "Taxes": "number"
+  },
+  "Valuation": {
+    "Previous_Rent": "number",
+    "List_Price": "number",
+    "Zestimate": "number",
+    "ARV": "number",
+    "Expected_Rent": "number",
+    "Rent_Zestimate": "number",
+    "Low_FMR": "number",
+    "High_FMR": "number",
+    "Redfin_Value": "number"
+  }
+}

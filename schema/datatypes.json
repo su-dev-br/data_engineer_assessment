@@ -1,0 +1,17 @@
+{
+    "mysql": {
+        "int": "Int64",
+        "bigint": "Int64",
+        "smallint": "Int64",
+        "tinyint": "Int64",
+        "varchar": "object",
+        "char": "object",
+        "text": "object",
+        "date": "datetime64[ns]",
+        "datetime": "datetime64[ns]",
+        "timestamp": "datetime64[ns]",
+        "float": "float64",
+        "double": "float64",
+        "decimal": "float64"
+    }
+}

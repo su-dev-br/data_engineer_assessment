@@ -1,0 +1,19 @@
+{
+  "HOA": {
+    "type": "array",
+    "arr_column": ["HOA"],
+    "select_list": ["HOA"],
+    "items": {
+      "HOA": {
+        "name": "HOA",
+        "type": "integer",
+        "path": "HOA.HOA"
+      },
+      "HOA_Flag": {
+        "name": "HOA_Flag",
+        "type": "string",
+        "path": "HOA.HOA_Flag"
+      }
+    }
+  }
+}
