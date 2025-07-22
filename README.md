@@ -1,9 +1,9 @@
 # data_engineer_assessment
 
-docker compose -f docker-compose.initial.yml up --build -d
+<!-- docker compose -f docker-compose.initial.yml up --build -d -->
 
 1. Run `bash script.sh`
-    To create and activate vertuval env in python
+    To create and activate vertuval env in python [pyenv]
     compose docker file and up the container 
     create env variable 
     run intial scripts for creatiin table etc..

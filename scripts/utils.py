@@ -13,16 +13,16 @@ def get_db_config():
     MYSQL_USER = os.getenv("MYSQL_USER")
     MYSQL_PASSWORD = os.getenv("MYSQL_PASSWORD")
     MYSQL_DATABASE = os.getenv("MYSQL_DATABASE")
-    # If not found in .env, try loading from config.json
-    if not all([MYSQL_HOST, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DATABASE]):
-        config_path = os.path.join(os.path.dirname(__file__), '..', 'config.json')
-        if os.path.exists(config_path):
-            with open(config_path, 'r') as f:
-                config = json.load(f)
-                MYSQL_HOST = config.get("MYSQL_HOST")
-                MYSQL_USER = config.get("MYSQL_USER")
-                MYSQL_PASSWORD = config.get("MYSQL_PASSWORD")
-                MYSQL_DATABASE = config.get("MYSQL_DATABASE")
+    # # If not found in .env, try loading from config.json
+    # if not all([MYSQL_HOST, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DATABASE]):
+    #     config_path = os.path.join(os.path.dirname(__file__), '..', 'config.json')
+    #     if os.path.exists(config_path):
+    #         with open(config_path, 'r') as f:
+    #             config = json.load(f)
+    #             MYSQL_HOST = config.get("MYSQL_HOST")
+    #             MYSQL_USER = config.get("MYSQL_USER")
+    #             MYSQL_PASSWORD = config.get("MYSQL_PASSWORD")
+    #             MYSQL_DATABASE = config.get("MYSQL_DATABASE")
     return ROOT_PATH, MYSQL_HOST, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DATABASE
 
 
