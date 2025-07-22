@@ -1,8 +1,31 @@
 
 import json
 import os
-from mysqlConnector import MySQLConnection
 import pandas as pd
+from dotenv import load_dotenv
+from mysqlConnector import MySQLConnection
+
+
+def get_db_config():
+    load_dotenv()
+    ROOT_PATH = os.getenv("ROOT_PATH", os.getcwd())
+    MYSQL_HOST = os.getenv("MYSQL_HOST")
+    MYSQL_USER = os.getenv("MYSQL_USER")
+    MYSQL_PASSWORD = os.getenv("MYSQL_PASSWORD")
+    MYSQL_DATABASE = os.getenv("MYSQL_DATABASE")
+    # If not found in .env, try loading from config.json
+    if not all([MYSQL_HOST, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DATABASE]):
+        config_path = os.path.join(os.path.dirname(__file__), '..', 'config.json')
+        if os.path.exists(config_path):
+            with open(config_path, 'r') as f:
+                config = json.load(f)
+                MYSQL_HOST = config.get("MYSQL_HOST")
+                MYSQL_USER = config.get("MYSQL_USER")
+                MYSQL_PASSWORD = config.get("MYSQL_PASSWORD")
+                MYSQL_DATABASE = config.get("MYSQL_DATABASE")
+    return ROOT_PATH, MYSQL_HOST, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DATABASE
+
+
 
 def read_json(file_path):
     with open(file_path, 'r') as file:
@@ -10,8 +33,22 @@ def read_json(file_path):
     return data
 
 
+def execute_sql_file(file_path, connection):
+    with open(file_path, 'r') as file:
+        sql_commands = file.read().split(';')  # Split commands by semicolon
+
+    cursor = connection.cursor()
+    for command in sql_commands:
+        command = command.strip()
+        if command:  # Execute non-empty commands
+            cursor.execute(command)
+    connection.commit()
+    cursor.close()
+    print(f"Executed SQL commands from {file_path} successfully.")
+
+
 def fetch_table_metadata(connection, table_name, database=None):
-    cursor = connection.cursor(dictionary=True)
+    cursor = connection.cursor()
     # If database specified, qualify table name
     qualified_table = f"`{database}`.`{table_name}`" if database else table_name
     cursor.execute(f"DESCRIBE {qualified_table}")
@@ -50,3 +87,4 @@ def write_to_mysql(df, table_name, connection):
     connection.commit()
     cursor.close()
     print(f"Data loaded into {table_name} successfully.")
+

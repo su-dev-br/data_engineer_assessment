@@ -2,6 +2,7 @@
   "HOA": {
     "type": "array",
     "arr_column": ["HOA"],
+    "json_list": ["HOA"],
     "select_list": ["HOA"],
     "items": {
       "HOA": {

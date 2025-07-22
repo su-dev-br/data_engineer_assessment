@@ -8,7 +8,7 @@ class MySQLConnection:
         self.password = password
         self.database = database
         self.connection = None
-        self.cusor = None
+        self.cursor = None
 
     def connect_to_mysql(self):
         try:
@@ -28,10 +28,10 @@ class MySQLConnection:
             self.connection = None
             return None
         
-    def get_cusor(self, connection):
+    def get_cursor(self, connection):
         if self.connection and self.connection.is_connected():
-            self.cusor = self.connection.cursor(dictionary=True)
-            return self.cusor
+            self.cursor = self.connection.cursor(dictionary=True)
+            return self.cursor
         else:
             print("No active connection to get cursor.")
             return None

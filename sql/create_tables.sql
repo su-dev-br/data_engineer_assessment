@@ -1,9 +1,9 @@
-CREATE TABLE HOA (
+CREATE TABLE IF NOT EXISTS home_db.HOA (
     HOA VARCHAR(255),
     HOA_Flag VARCHAR(255)
 );
 
-CREATE TABLE Leads (
+CREATE TABLE IF NOT EXISTS home_db.Leads (
     Reviewed_Status VARCHAR(255),
     Most_Recent_Status VARCHAR(255),
     Source VARCHAR(255),
@@ -15,7 +15,7 @@ CREATE TABLE Leads (
     Final_Reviewer VARCHAR(255)
 );
 
-CREATE TABLE property (
+CREATE TABLE IF NOT EXISTS home_db.property (
     Property_Title VARCHAR(255),
     Address VARCHAR(255),
     Market VARCHAR(255),
@@ -50,7 +50,7 @@ CREATE TABLE property (
     School_Average DECIMAL(3,2)
 );
 
-CREATE TABLE Rehab (
+CREATE TABLE IF NOT EXISTS home_db.Rehab (
     Underwriting_Rehab VARCHAR(255),
     Rehab_Calculation VARCHAR(255),
     Paint VARCHAR(255),
@@ -66,11 +66,11 @@ CREATE TABLE Rehab (
     Trashout_Flag VARCHAR(255)
 );
 
-CREATE TABLE Taxes (
+CREATE TABLE IF NOT EXISTS home_db.Taxes (
     Taxes DECIMAL(10,2)
 );
 
-CREATE TABLE Valuation (
+CREATE TABLE IF NOT EXISTS home_db.Valuation (
     Previous_Rent DECIMAL(10,2),
     List_Price DECIMAL(12,2),
     Zestimate DECIMAL(12,2),

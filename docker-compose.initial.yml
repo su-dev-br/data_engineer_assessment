@@ -10,12 +10,9 @@ services:
       MYSQL_USER: db_user
       MYSQL_PASSWORD: 6equj5_db_user
     ports:
-      - "3307:3306"
+      - "3306:3306"
     volumes:
       - ./workspace:/var/lib/mysql:rw
-      # - ./initdb:/docker-entrypoint-initdb.d 
-    # networks:
-    #   - app_net
     networks:
       - shared_net
       

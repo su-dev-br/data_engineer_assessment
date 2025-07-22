@@ -1,0 +1,229 @@
+[
+  {
+    "Property_Title": "875 Davis Overpass Suite 394, South Kathrynside, CO 35116",
+    "Address": "875 Davis Overpass Suite 394, South Kathrynside, CO 35116",
+    "Reviewed_Status": " ",
+    "Most_Recent_Status": "Closed",
+    "Source": "Internal",
+    "Market": "Chicago",
+    "Occupancy": null,
+    "Flood": null,
+    "Street_Address": "875 Davis Overpass Suite 394",
+    "City": "South Kathrynside",
+    "State": "CO",
+    "Zip": "35116",
+    "Property_Type": "SFR",
+    "Highway": "Far",
+    "Train": null,
+    "Tax_Rate": 2.95,
+    "SQFT_Basement": 367,
+    "HTW": "Yes",
+    "Pool": "No",
+    "Commercial": "Yes",
+    "Water": "Well",
+    "Sewage": "City",
+    "Year_Built": 1921,
+    "SQFT_MU": 1110,
+    "SQFT_Total": 5649,
+    "Parking": "Street",
+    "Bed": 2,
+    "Bath": 3,
+    "BasementYesNo": null,
+    "Layout": "Split",
+    "Net_Yield": 3.53,
+    "IRR": 14.48,
+    "Rent_Restricted": "Yes",
+    "Neighborhood_Rating": 2,
+    "Latitude": 38.415818,
+    "Longitude": -81.853842,
+    "Subdivision": "Manors",
+    "Taxes": 6389,
+    "Selling_Reason": "Downsizing",
+    "Seller_Retained_Broker": null,
+    "Final_Reviewer": "Jason Miller",
+    "School_Average": 9.09,
+    "Valuation": [
+      {
+        "List_Price": 93528,
+        "Previous_Rent": 1699,
+        "ARV": 130693,
+        "Rent_Zestimate": 2047,
+        "Low_FMR": 1251,
+        "Redfin_Value": 379528
+      },
+      {
+        "List_Price": 281162,
+        "Zestimate": 522504,
+        "Expected_Rent": 2671,
+        "Low_FMR": 1306,
+        "High_FMR": 1859,
+        "Redfin_Value": 515319
+      },
+      {
+        "List_Price": 175119,
+        "Previous_Rent": 2188,
+        "Expected_Rent": 1386,
+        "Low_FMR": 1612
+      },
+      {
+        "List_Price": 168323,
+        "Zestimate": 192171,
+        "Expected_Rent": 3138,
+        "High_FMR": 5157
+      }
+    ],
+    "HOA": [
+      {
+        "HOA": 460,
+        "HOA_Flag": "No"
+      },
+      {
+        "HOA": 476,
+        "HOA_Flag": "Yes"
+      }
+    ],
+    "Rehab": [
+      {
+        "Underwriting_Rehab": 66402,
+        "Rehab_Calculation": 54602,
+        "Paint": null,
+        "Flooring_Flag": "No",
+        "Foundation_Flag": "Yes",
+        "Roof_Flag": null,
+        "HVAC_Flag": null,
+        "Kitchen_Flag": null,
+        "Bathroom_Flag": null,
+        "Appliances_Flag": "No",
+        "Windows_Flag": "Yes",
+        "Landscaping_Flag": null,
+        "Trashout_Flag": "No"
+      },
+      {
+        "Underwriting_Rehab": 20995,
+        "Rehab_Calculation": 67666,
+        "Paint": "Yes",
+        "Flooring_Flag": "Yes",
+        "Foundation_Flag": "Yes",
+        "Roof_Flag": "No",
+        "HVAC_Flag": "Yes",
+        "Kitchen_Flag": "Yes",
+        "Bathroom_Flag": null,
+        "Appliances_Flag": null,
+        "Windows_Flag": "Yes",
+        "Landscaping_Flag": "No",
+        "Trashout_Flag": "No"
+      },
+      {
+        "Underwriting_Rehab": 64582,
+        "Rehab_Calculation": 68022,
+        "Paint": "No",
+        "Flooring_Flag": null,
+        "Foundation_Flag": "Yes",
+        "Roof_Flag": "Yes",
+        "HVAC_Flag": "Yes",
+        "Kitchen_Flag": "No",
+        "Bathroom_Flag": "Yes",
+        "Appliances_Flag": null,
+        "Windows_Flag": null,
+        "Landscaping_Flag": "Yes",
+        "Trashout_Flag": "No"
+      }
+    ]
+  },
+  {
+    "Property_Title": "1159 Johnson Pass Apt. 567, South Jamesfurt, MN 60391",
+    "Address": "1159 Johnson Pass Apt. 567, South Jamesfurt, MN 60391",
+    "Reviewed_Status": "Reviewed",
+    "Most_Recent_Status": "Cancelled",
+    "Source": "Auction.com",
+    "Market": "Dallas",
+    "Occupancy": null,
+    "Flood": "Minimal Flood",
+    "Street_Address": "1159 Johnson Pass Apt. 567",
+    "City": "South Jamesfurt",
+    "State": "MN",
+    "Zip": "60391",
+    "Property_Type": "Single Family Home",
+    "Highway": null,
+    "Train": "Far",
+    "Tax_Rate": 1.75,
+    "SQFT_Basement": 284,
+    "HTW": "Yes",
+    "Pool": null,
+    "Commercial": null,
+    "Water": "City",
+    "Sewage": "Septic",
+    "Year_Built": 1995,
+    "SQFT_MU": 1184,
+    "SQFT_Total": 5119,
+    "Parking": "Driveway",
+    "Bed": 2,
+    "Bath": 2,
+    "BasementYesNo": null,
+    "Layout": "Colonial",
+    "Net_Yield": 6.59,
+    "IRR": 22.92,
+    "Rent_Restricted": "Yes",
+    "Neighborhood_Rating": 3,
+    "Latitude": 35.329786,
+    "Longitude": -105.265714,
+    "Subdivision": "Cliff",
+    "Taxes": 9321,
+    "Selling_Reason": null,
+    "Seller_Retained_Broker": null,
+    "Final_Reviewer": "Luis Garcia",
+    "School_Average": 7.71,
+    "Valuation": [
+      {
+        "List_Price": 434027,
+        "Previous_Rent": 2955,
+        "ARV": 187554,
+        "Rent_Zestimate": 3324
+      },
+      {
+        "List_Price": 298991,
+        "Zestimate": 391125,
+        "ARV": 518260,
+        "Rent_Zestimate": 3082,
+        "Low_FMR": 1728,
+        "Redfin_Value": 458495
+      },
+      {
+        "List_Price": 247549,
+        "Previous_Rent": 2412
+      },
+      {
+        "List_Price": 225463,
+        "Rent_Zestimate": 2004,
+        "Redfin_Value": 360480
+      }
+    ],
+    "HOA": [
+      {
+        "HOA": 322,
+        "HOA_Flag": "Yes"
+      },
+      {
+        "HOA": 219,
+        "HOA_Flag": "Yes"
+      }
+    ],
+    "Rehab": [
+      {
+        "Underwriting_Rehab": 57763,
+        "Rehab_Calculation": 30244,
+        "Paint": "Yes",
+        "Flooring_Flag": "No",
+        "Foundation_Flag": null,
+        "Roof_Flag": null,
+        "HVAC_Flag": "No",
+        "Kitchen_Flag": "No",
+        "Bathroom_Flag": "No",
+        "Appliances_Flag": "Yes",
+        "Windows_Flag": "No",
+        "Landscaping_Flag": "No",
+        "Trashout_Flag": "Yes"
+      }
+    ]
+  }
+]
