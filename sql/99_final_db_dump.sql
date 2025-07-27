@@ -5,7 +5,8 @@ CREATE DATABASE IF NOT EXISTS home_db;
 USE home_db;
 
 CREATE TABLE IF NOT EXISTS property_info (
-    id VARCHAR(255),
+    -- id VARCHAR(255),
+    id INT NOT NULL AUTO_INCREMENT,
     constraint pk_property_info PRIMARY KEY (id)
 );
 

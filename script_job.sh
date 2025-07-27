@@ -13,6 +13,7 @@ export MYSQL_PASSWORD=6equj5_db_user
 
 
 python3 scripts/etl_2.py
+python3 scripts/etl_3.py
 
 
 

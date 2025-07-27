@@ -22,13 +22,13 @@ until docker exec -i $(docker ps -qf "name=mysql") mysqladmin ping -h"$MYSQL_HOS
     sleep 5
 done
 
-
 pip3 install -r ./requirements.txt
+
 
 echo "About to run start_up.py"
 chmod +x script.sh
 python3 scripts/start_up.py
-echo "Finished running start_up.py"
+# echo "Finished running start_up.py"
 
 
 

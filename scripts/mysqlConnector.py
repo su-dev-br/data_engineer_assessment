@@ -269,6 +269,21 @@ class MySQLConnection:
         self.connection.commit()
         self.close_cursor()
 
+
+    
+    def fetch_all(self, query, params=None):
+        """Fetch all records from the database."""
+        "select id as pi_id, hoa from home_db.property_info"
+        cursor = self.get_cursor()
+        cursor.execute(query, params)
+        return cursor.fetchall()
+    
+    def fetch_one(self, query, params=None):
+        """Fetch a single record from the database."""
+        cursor = self.get_cursor()
+        cursor.execute(query, params)
+        return cursor.fetchone()
+
     # Context manager interface
 
     def __enter__(self) -> ms.MySQLConnection:

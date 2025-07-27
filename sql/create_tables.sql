@@ -5,16 +5,21 @@ CREATE DATABASE IF NOT EXISTS home_db;
 USE home_db;
 
 CREATE TABLE IF NOT EXISTS property_info (
-    id VARCHAR(255),
+    -- id VARCHAR(255),
+    id INT NOT NULL AUTO_INCREMENT,
     constraint pk_property_info PRIMARY KEY (id)
 );
 
 CREATE TABLE IF NOT EXISTS HOA (
+    id INT NOT NULL AUTO_INCREMENT,
+    pi_id int, -- property_info.id
     HOA VARCHAR(255),
     HOA_Flag VARCHAR(255)
 );
 
 CREATE TABLE IF NOT EXISTS Leads (
+    id INT NOT NULL AUTO_INCREMENT,
+    pi_id int, -- property_info.id
     Reviewed_Status VARCHAR(255),
     Most_Recent_Status VARCHAR(255),
     Source VARCHAR(255),
@@ -27,6 +32,8 @@ CREATE TABLE IF NOT EXISTS Leads (
 );
 
 CREATE TABLE IF NOT EXISTS property (
+    id INT NOT NULL AUTO_INCREMENT,
+    pi_id int, -- property_info.id
     Property_Title VARCHAR(255),
     Address VARCHAR(255),
     Market VARCHAR(255),
@@ -62,6 +69,8 @@ CREATE TABLE IF NOT EXISTS property (
 );
 
 CREATE TABLE IF NOT EXISTS Rehab (
+    id INT NOT NULL AUTO_INCREMENT,
+    pi_id int, -- property_info.id
     Underwriting_Rehab VARCHAR(255),
     Rehab_Calculation VARCHAR(255),
     Paint VARCHAR(255),
@@ -78,10 +87,14 @@ CREATE TABLE IF NOT EXISTS Rehab (
 );
 
 CREATE TABLE IF NOT EXISTS Taxes (
+    id INT NOT NULL AUTO_INCREMENT,
+    pi_id int, -- property_info.id
     Taxes DECIMAL(10,2)
 );
 
 CREATE TABLE IF NOT EXISTS Valuation (
+    id INT NOT NULL AUTO_INCREMENT,
+    pi_id int, -- property_info.id
     Previous_Rent DECIMAL(10,2),
     List_Price DECIMAL(12,2),
     Zestimate DECIMAL(12,2),

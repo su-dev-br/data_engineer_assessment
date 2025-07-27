@@ -17,9 +17,8 @@ def load_json_data(json_data, ms: MySQLConnection):
     #   generate MD5 hash for the 'primary keys' column
     print("Generating MD5 hash for primary keys...", df.shape)
     prime_df = df['Property_Title'].astype(str)
-    df['id'] = prime_df.apply(generate_md5_hash)
+    df['md5_id'] = prime_df.apply(generate_md5_hash)
     print("Dataframe shape:", df.shape)
-
 
     ms.merge_into_mysql(df, 'property_info')
     print("Data loaded into MySQL successfully.")

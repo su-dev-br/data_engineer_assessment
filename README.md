@@ -13,6 +13,8 @@
 
 
 3. connect to docker shell
+    docker ps
+    docker exec -ti 6bdec47f20bf /bin/bash
     mysql -u root -p 
     6equj5_root
 
@@ -21,6 +23,7 @@
 
 5.  validate data 
     select * from home_db.HOA; 
+    select * from home_db.property_info; 
 
 
 
