@@ -4,11 +4,6 @@ services:
       context: .
       dockerfile: Dockerfile.initial_db
     container_name: mysql_ctn
-    environment:
-      MYSQL_ROOT_PASSWORD: 6equj5_root
-      MYSQL_DATABASE: home_db
-      MYSQL_USER: db_user
-      MYSQL_PASSWORD: 6equj5_db_user
     ports:
       - "3306:3306"
     volumes:

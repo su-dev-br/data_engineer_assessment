@@ -1,8 +1,89 @@
 {
   "HOA": {
-    "arr_column": ["HOA"],
-    "json_list": ["HOA"],
-    "select_list": ["HOA"]
+    "arr_column": [
+      "HOA"
+    ],
+    "json_list": [
+      "HOA"
+    ],
+    "select_list": [
+      "HOA"
+    ]
+  },
+  "Leads": {
+    "select_list": [
+      "Reviewed_Status",
+      "Most_Recent_Status",
+      "Source",
+      "Occupancy",
+      "Net_Yield",
+      "IRR",
+      "Selling_Reason",
+      "Seller_Retained_Broker",
+      "Final_Reviewer"
+    ]
+  },
+  "property": {
+    "select_list": [
+      "Property_Title",
+      "Address",
+      "Market",
+      "Flood",
+      "Street_Address",
+      "City",
+      "State",
+      "Zip",
+      "Property_Type",
+      "Highway",
+      "Train",
+      "Tax_Rate",
+      "SQFT_Basement",
+      "HTW",
+      "Pool",
+      "Commercial",
+      "Water",
+      "Sewage",
+      "Year_Built",
+      "SQFT_MU",
+      "SQFT_Total",
+      "Parking",
+      "Bed",
+      "Bath",
+      "BasementYesNo",
+      "Layout",
+      "Rent_Restricted",
+      "Neighborhood_Rating",
+      "Latitude",
+      "Longitude",
+      "Subdivision",
+      "School_Average"
+    ]
+  },
+  "Rehab": {
+    "arr_column": [
+      "Rehab"
+    ],
+    "json_list": [
+      "Rehab"
+    ],
+    "select_list": [
+      "Rehab"
+    ]
+  },
+  "Taxes": {
+    "select_list": [
+      "Taxes"
+    ]
+  },
+  "Valuation": {
+    "arr_column": [
+      "Valuation"
+    ],
+    "json_list": [
+      "Valuation"
+    ],
+    "select_list": [
+      "Valuation"
+    ]
   }
-
 }

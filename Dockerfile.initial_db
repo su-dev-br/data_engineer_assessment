@@ -7,5 +7,6 @@ ENV MYSQL_USER=db_user
 ENV MYSQL_DATABASE=home_db
 ENV MYSQL_PASSWORD=6equj5_db_user
 
+COPY ./sql/99_final_db_dump.sql /docker-entrypoint-initdb.d/
 
 EXPOSE 3306

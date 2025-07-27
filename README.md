@@ -12,7 +12,7 @@
     This will call the ETL jobs
 
 
-3. coonect to docker shell
+3. connect to docker shell
     mysql -u root -p 
     6equj5_root
 

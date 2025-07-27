@@ -6,7 +6,8 @@ source pyenv/bin/activate || python3 -m venv pyenv && source pyenv/bin/activate
 # python3 -m venv pyenv
 # source pyenv/bin/activate
 
-export ROOT_PATH = pwd
+export ROOT_PATH="$(pwd)"
+echo "Root path set to: $ROOT_PATH"
 export MYSQL_HOST=localhost
 export MYSQL_USER=db_user
 export MYSQL_DATABASE=home_db
@@ -28,3 +29,7 @@ echo "About to run start_up.py"
 chmod +x script.sh
 python3 scripts/start_up.py
 echo "Finished running start_up.py"
+
+
+
+# python3 ./scripts/etl_1.py

@@ -34,6 +34,7 @@ git clone https://github.com/100x-Home-LLC/data_engineer_assessment.git
 
 ```
 docker-compose -f docker-compose.initial.yml up --build -d
+docker-compose -f docker-compose.initial.yml up --build -d
 ```
 
 - Database is available on `localhost:3306`
